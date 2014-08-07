@@ -1,18 +1,8 @@
 /*!
  * jquery.ua.js
- * @author 云淡然 http://qianduanblog.com
- * @version 1.2
- * 2014年6月26日19:48:20
+ * @link https://github.com/cloudcome/jquery.ua
+ * @author ydr.me
  */
-
-
-
-
-
-
-
-
-
 
 
 
@@ -20,12 +10,12 @@
 module.exports = function($){
     'use strict';
 
-    var win = window,
+    var 
+        win = window,
         nav = win.navigator,
         navua = nav.userAgent,
         appVersion = nav.appVersion,
         doc = win.document,
-        $ = win.$,
         parseRule = _getRules(),
         ieAX = win.ActiveXObject,
         ieMode = doc.documentMode,
@@ -52,14 +42,14 @@ module.exports = function($){
             isLiebao: chromiumType === 'liebao',
             isFirefox: win.scrollMaxX !== undefined,
             isMaxthon: ieVer && /\bmaxthon\b/i.test(appVersion),
-            isQQ: ieVer && /\bqqbrowser\b/i.test(appVersion)
+            isQQ: !!ieVer && /\bqqbrowser\b/i.test(appVersion)
         }, i;
 
 
 
 
     $.ua = function(ua) {
-        var _ua = new Ua(ua);
+        var _ua = new Constructor(ua);
         return _ua._parse();
     };
 
@@ -76,14 +66,14 @@ module.exports = function($){
     // ================ UA ===================
     // =======================================
 
-    function Ua(ua) {
+    function Constructor(ua) {
         this.ua = (ua || navua || '').toLowerCase();
         this.isWebkit = !1;
         this.isGecko = !1;
         this.isTrident = !1;
     }
 
-    Ua.prototype = {
+    Constructor.prototype = {
         _parse: function() {
             var that = this,
                 objPlatform = _parse(parseRule.platforms, that.ua),

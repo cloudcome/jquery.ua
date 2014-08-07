@@ -1,7 +1,7 @@
 {
   "name": "jquery.ua",
-  "version": "1.3.1",
-  "description": "判断360、chrome、firefox、IE浏览器的UA、版本、外壳等信息",
+  "version": "1.3.0",
+  "description": "jquery.ua 插件判断360、chrome、firefox、IE浏览器的UA、版本、外壳等信息",
   "keywords": [
     "jquery",
     "yquery",
@@ -9,16 +9,25 @@
     "navigator",
     "userAgent",
     "360",
+    "360se",
+    "360ee",
+    "firefox",
+    "ie",
+    "internet explorer",
     "ua"
   ],
   "author": {
     "name": "cloudcome",
-    "email": "cloudcome@163.com"
+    "email": "cloudcome@163.com",
+    "url": "http://ydr.me"
   },
-  "homepage": "https://ydr.me/",
+  "homepage": "http://spmjs.io/docs/jquery.ua/",
   "repository": {
     "type": "git",
     "url": "https://github.com/cloudcome/jquery.ua"
+  },
+  "bugs": {
+    "url": "https://github.com/cloudcome/jquery.ua/issues"
   },
   "licenses": "MIT",
   "spm": {
