@@ -99,3 +99,12 @@ $.ua.isIe11;
 ```
 
 
+
+
+## Demo
+[http://spmjs.io/docs/jquery.ua/examples/index.html](http://spmjs.io/docs/jquery.ua/examples/index.html)
+
+
+## History
+[http://spmjs.io/docs/jquery.ua/history.html](http://spmjs.io/docs/jquery.ua/history.html)
+
